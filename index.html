@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<title>Advogrand — современный сервис абонентского юридического обслуживания</title>
 	<meta charset="UTF-8">
@@ -16,7 +16,7 @@
 </head>
 <body>
 	<header class="header">
-		<div class="header__top">
+		<div class="header__top fixed-header">
 			<div class="page-width">
 				<div class="header__top-wrapper">
 					<a class="header__top-phone" href="tel:+74993228580">+7 499 322-85-80</a>
@@ -54,7 +54,7 @@
 		<section class="home">
 			<div class="page-width">
 				<div class="home__wrapper">
-					<h1 class="home__title">Годовой абонемент на услуги<p class="home__title-wrapper">«личного юриста»</p></h1>
+					<h1 class="home__title">Годовой абонемент на услуги<br><span class="home__title-wrapper">«личного юриста»</span></h1>
 					<p class="home__text">24 часа в сутки Ваш личный юрист<br>– <strong class="home__text-bold">Advogrand</strong> на связи<br>всего <strong class="home__text-bold">за 12 рублей в день</strong></p>
 					<a class="home__button button-link modal-contact" href="javascript:void(0)">Хочу «личного юриста»!</a>
 				</div>
@@ -263,13 +263,14 @@
 			<div class="reviews__wrapper section">
 				<div class="page-width tab__parent">
 					<h2 class="reviews__title section__title">Отзывы</h2>
-					<div class="reviews__buttons">
-						<a class="reviews__button tab2__button" href="javascript:void(0)">Здравоохранение</a>
-						<a class="reviews__button tab2__button" href="javascript:void(0)">Бизнес</a>
-						<a class="reviews__button tab2__button" href="javascript:void(0)">Семья</a>
-						<a class="reviews__button tab2__button" href="javascript:void(0)">ЖКХ</a>
-						<a class="reviews__button tab2__button" href="javascript:void(0)">Недвижимость</a>
-						<a class="reviews__button tab2__button" href="javascript:void(0)">Все</a>
+					<a class="reviews__button-mobile accordion" href="javascript:void(0)"><p class="reviews__button-mobile-text accordion__text">Все</p><i class="reviews__button-mobile-icon accordion__icon fas fa-angle-down"></i></a>
+					<div class="reviews__buttons accordion__buttons">
+						<a class="reviews__button tab2__button accordion__button" href="javascript:void(0)">Здравоохранение</a>
+						<a class="reviews__button tab2__button accordion__button" href="javascript:void(0)">Бизнес</a>
+						<a class="reviews__button tab2__button accordion__button" href="javascript:void(0)">Семья</a>
+						<a class="reviews__button tab2__button accordion__button" href="javascript:void(0)">ЖКХ</a>
+						<a class="reviews__button tab2__button accordion__button" href="javascript:void(0)">Недвижимость</a>
+						<a class="reviews__button tab2__button accordion__button" href="javascript:void(0)">Все</a>
 					</div>
 					<div class="reviews__slider slider tab2 tab">
 						<div class="reviews__slider-wrapper">
@@ -549,23 +550,23 @@
 								<div class="rates__tab1-card-services">
 									<div class="rates__tab1-card-service rates__tab-card-service">
 										<p class="rates__tab1-card-text">Устные консультации</p>
-										<p class="rates__tab1-card-number rates__tab-card-number">2 в месяц</p>
+										<p class="rates__tab1-card-number rates__tab-card-number">3 в месяц</p>
 									</div>
 									<div class="rates__tab1-card-service rates__tab-card-service">
 										<p class="rates__tab1-card-text">Консультации в отношении 3-х лиц</p>
-										<p class="rates__tab1-card-number rates__tab-card-number">2 в год</p>
+										<p class="rates__tab1-card-number rates__tab-card-number">4 в год</p>
 									</div>
 									<div class="rates__tab1-card-service rates__tab-card-service">
 										<p class="rates__tab1-card-text">Письменные консультации </p>
-										<p class="rates__tab1-card-number rates__tab-card-number">2 в квартал</p>
+										<p class="rates__tab1-card-number rates__tab-card-number">3 в квартал</p>
 									</div>
 									<div class="rates__tab1-card-service rates__tab-card-service">
 										<p class="rates__tab1-card-text">Звонок юриста</p>
-										<p class="rates__tab1-card-number rates__tab-card-number">1 в год</p>
+										<p class="rates__tab1-card-number rates__tab-card-number">4 в год</p>
 									</div>
 									<div class="rates__tab1-card-service rates__tab-card-service">
 										<p class="rates__tab1-card-text">Содействие в переговорах</p>
-										<p class="rates__tab1-card-number rates__tab-card-number">1 в месяц</p>
+										<p class="rates__tab1-card-number rates__tab-card-number">2 в месяц</p>
 									</div>
 									<div class="rates__tab1-card-service rates__tab-card-service">
 										<p class="rates__tab1-card-text rates__tab1-card-text2">Сервис для всей семьи</p>
@@ -586,23 +587,23 @@
 								<div class="rates__tab1-card-services">
 									<div class="rates__tab1-card-service rates__tab-card-service">
 										<p class="rates__tab1-card-text">Устные консультации</p>
-										<p class="rates__tab1-card-number rates__tab-card-number">2 в месяц</p>
+										<p class="rates__tab1-card-number rates__tab-card-number">неограничено</p>
 									</div>
 									<div class="rates__tab1-card-service rates__tab-card-service">
 										<p class="rates__tab1-card-text">Консультации в отношении 3-х лиц</p>
-										<p class="rates__tab1-card-number rates__tab-card-number">2 в год</p>
+										<p class="rates__tab1-card-number rates__tab-card-number">4 в год</p>
 									</div>
 									<div class="rates__tab1-card-service rates__tab-card-service">
 										<p class="rates__tab1-card-text">Письменные консультации </p>
-										<p class="rates__tab1-card-number rates__tab-card-number">2 в квартал</p>
+										<p class="rates__tab1-card-number rates__tab-card-number">3 в квартал</p>
 									</div>
 									<div class="rates__tab1-card-service rates__tab-card-service">
 										<p class="rates__tab1-card-text">Звонок юриста</p>
-										<p class="rates__tab1-card-number rates__tab-card-number">1 в год</p>
+										<p class="rates__tab1-card-number rates__tab-card-number">4 в год</p>
 									</div>
 									<div class="rates__tab1-card-service rates__tab-card-service">
 										<p class="rates__tab1-card-text">Содействие в переговорах</p>
-										<p class="rates__tab1-card-number rates__tab-card-number">1 в месяц</p>
+										<p class="rates__tab1-card-number rates__tab-card-number">неограничено</p>
 									</div>
 									<div class="rates__tab1-card-service rates__tab-card-service">
 										<p class="rates__tab1-card-text rates__tab1-card-text2">Бизнес-косультации</p>
@@ -616,7 +617,7 @@
 								</div>
 								<div class="rates__tab1-card-bottom">
 									<p class="rates__tab1-card-price-text rates__tab-card-price-text">Цена:</p>
-									<p class="rates__tab1-card-price-cost rates__tab-card-price-cost">260 $ за год</p>
+									<p class="rates__tab1-card-price-cost rates__tab-card-price-cost">265 $ за год</p>
 									<div class="rates__tab1-card-buttons rates__tab-card-buttons">
 										<a class="rates__tab1-card-button rates__tab-card-button rates__tab1-card3-button1 rates__tab-card3-button1 button-link modal-contact" href="javascript:void(0)">Консультация</a>
 										<a class="rates__tab1-card-button rates__tab-card-button rates__tab1-card-button2 button-link" href="#">Купить</a>
@@ -670,23 +671,23 @@
 							<div class="rates__tab2-card-middle">
 								<div class="rates__tab2-card-service rates__tab-card-service">
 									<p class="rates__tab2-card-text">Устные консультации</p>
-									<p class="rates__tab2-card-number rates__tab-card-number">2 в месяц</p>
+									<p class="rates__tab2-card-number rates__tab-card-number">3 в месяц</p>
 								</div>
 								<div class="rates__tab2-card-service rates__tab-card-service">
 									<p class="rates__tab2-card-text">Консультации в отношении 3-х лиц</p>
-									<p class="rates__tab2-card-number rates__tab-card-number">2 в год</p>
+									<p class="rates__tab2-card-number rates__tab-card-number">4 в год</p>
 								</div>
 								<div class="rates__tab2-card-service rates__tab-card-service">
 									<p class="rates__tab2-card-text">Письменные консультации </p>
-									<p class="rates__tab2-card-number rates__tab-card-number">2 в квартал</p>
+									<p class="rates__tab2-card-number rates__tab-card-number">3 в квартал</p>
 								</div>
 								<div class="rates__tab2-card-service rates__tab-card-service">
 									<p class="rates__tab2-card-text">Звонок юриста</p>
-									<p class="rates__tab2-card-number rates__tab-card-number">1 в год</p>
+									<p class="rates__tab2-card-number rates__tab-card-number">4 в год</p>
 								</div>
 								<div class="rates__tab2-card-service rates__tab-card-service">
 									<p class="rates__tab2-card-text">Содействие в переговорах</p>
-									<p class="rates__tab2-card-number rates__tab-card-number">1 в месяц</p>
+									<p class="rates__tab2-card-number rates__tab-card-number">2 в месяц</p>
 								</div>
 								<div class="rates__tab2-card-service rates__tab-card-service">
 									<p class="rates__tab2-card-text rates__tab2-card-text2">Сервис для всей семьи</p>
@@ -709,37 +710,31 @@
 							<div class="rates__tab2-card-middle">
 								<div class="rates__tab2-card-service rates__tab-card-service">
 									<p class="rates__tab2-card-text">Устные консультации</p>
-									<p class="rates__tab2-card-number rates__tab-card-number">2 в месяц</p>
+									<p class="rates__tab2-card-number rates__tab-card-number">неограничено</p>
 								</div>
 								<div class="rates__tab2-card-service rates__tab-card-service">
 									<p class="rates__tab2-card-text">Консультации в отношении 3-х лиц</p>
-									<p class="rates__tab2-card-number rates__tab-card-number">2 в год</p>
+									<p class="rates__tab2-card-number rates__tab-card-number">4 в год</p>
 								</div>
 								<div class="rates__tab2-card-service rates__tab-card-service">
 									<p class="rates__tab2-card-text">Письменные консультации </p>
-									<p class="rates__tab2-card-number rates__tab-card-number">2 в квартал</p>
+									<p class="rates__tab2-card-number rates__tab-card-number">3 в квартал</p>
 								</div>
 								<div class="rates__tab2-card-service rates__tab-card-service">
 									<p class="rates__tab2-card-text">Звонок юриста</p>
-									<p class="rates__tab2-card-number rates__tab-card-number">1 в год</p>
+									<p class="rates__tab2-card-number rates__tab-card-number">4 в год</p>
 								</div>
 								<div class="rates__tab2-card-service rates__tab-card-service">
 									<p class="rates__tab2-card-text">Содействие в переговорах</p>
-									<p class="rates__tab2-card-number rates__tab-card-number">1 в месяц</p>
-								</div>
-								<div class="rates__tab2-card-service rates__tab-card-service">
-									<p class="rates__tab2-card-text rates__tab2-card-text2">Бизнес-косультации</p>
+									<p class="rates__tab2-card-number rates__tab-card-number">неограничено</p>
 								</div>
 								<div class="rates__tab2-card-service rates__tab-card-service">
 									<p class="rates__tab2-card-text rates__tab2-card-text2">Рекомендуемая модель договора</p>
 								</div>
-								<div class="rates__tab2-card-service rates__tab-card-service">
-									<p class="rates__tab2-card-text rates__tab2-card-text2">Обзор изменения в законодательстве</p>
-								</div>
 							</div>
 							<div class="rates__tab2-card-right">
 								<p class="rates__tab2-card-price-text rates__tab-card-price-text">Цена:</p>
-								<p class="rates__tab2-card-price-cost rates__tab-card-price-cost">260 $ за год</p>
+								<p class="rates__tab2-card-price-cost rates__tab-card-price-cost">265 $ за год</p>
 								<div class="rates__tab2-card-buttons rates__tab-card-buttons">
 									<a class="rates__tab2-card-button rates__tab-card-button rates__tab2-card3-button1 rates__tab-card3-button1 button-link modal-contact" href="javascript:void(0)">Консультация</a>
 									<a class="rates__tab2-card-button rates__tab-card-button rates__tab2-card-button2 button-link" href="#">Купить</a>
@@ -817,7 +812,7 @@
 	<div class="modal">
 		<div class="modal__body">
 			<div class="modal__content-contact modal__content">
-				<button class="modal__close">&times</button>
+				<button class="modal__close">&times;</button>
 				<h3 class="modal__title section__title">Связаться с нами</h3>
 				<form class="contact-form" method="post" action="#">
 					<div class="contact-form-input-container">
@@ -841,7 +836,7 @@
 	<div class="modal">
 		<div class="modal__body">
 			<div class="modal__content-service modal__content">
-				<button class="modal__close">&times</button>
+				<button class="modal__close">&times;</button>
 				<div class="modal__service">
 					<h3 class="modal__title">Устные консультации</h3>
 					<img class="modal__service-img" src="img/modal-service-img1.jpg" alt="Услуга">
@@ -928,7 +923,7 @@
 	<div class="modal">
 		<div class="modal__body">
 			<div class="modal__content-video modal__content">
-				<button class="modal__close">&times</button>
+				<button class="modal__close">&times;</button>
 				<div class="modal__video-container">
 					<iframe class="modal__video" src="https://www.youtube.com/embed/nvkSt9jNNRE?enablejsapi=1"></iframe>
 					<iframe class="modal__video" src="https://www.youtube.com/embed/GEZ39uoVqTY?enablejsapi=1"></iframe>

@@ -5,14 +5,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<!--FAVICONS-->
-  <link rel="icon" href="img/favicons/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-	<!---->
-	<!--FONTS-->
+	<link rel="icon" href="img/favicons/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
 	<script src="https://kit.fontawesome.com/4c1e25a77a.js" crossorigin="anonymous"></script>
-	<!---->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 	<header class="header">
@@ -20,17 +16,17 @@
 			<div class="page-width">
 				<div class="header__top-wrapper">
 					<a class="header__top-phone" href="tel:+74993228580">+7 499 322-85-80</a>
-					<ul class="header__top-nav">
-						<li class="header__top-nav-item"><a class="header__top-nav-link" href="#how-work">Как мы работаем</a></li>
-						<li class="header__top-nav-item"><a class="header__top-nav-link" href="#advantages">Преимущества</a></li>
-						<li class="header__top-nav-item"><a class="header__top-nav-link" href="#reviews">Отзывы</a></li>
-						<li class="header__top-nav-item"><a class="header__top-nav-link" href="#rates">Тарифы</a></li>
-						<li class="header__top-nav-item"><a class="header__top-nav-link" href="#partners">Партнеры</a></li>
-						<li class="header__top-nav-item"><a class="header__top-nav-link" href="#contact">Контакты</a></li>
-					</ul>
+					<nav class="header__top-nav">
+						<a class="header__top-nav-link" href="#how-work">Как мы работаем</a>
+						<a class="header__top-nav-link" href="#advantages">Преимущества</a>
+						<a class="header__top-nav-link" href="#reviews">Отзывы</a>
+						<a class="header__top-nav-link" href="#rates">Тарифы</a>
+						<a class="header__top-nav-link" href="#partners">Партнеры</a>
+						<a class="header__top-nav-link" href="#contact">Контакты</a>
+					</nav>
 					<div class="header__top-right">
-						<a class="header__top-button modal-contact" href="javascript:void(0)">Перезвоните мне</a>
-						<button class="header__hamburger hamburger__button"><i class="fas fa-bars"></i></button>
+						<a class="header__top-button modal-contact__button" href="javascript:void(0)">Перезвоните мне</a>
+						<button class="header__hamburger hamburger__button" aria-label="Open navigation"><i class="fas fa-bars"></i></button>
 					</div>
 				</div>
 			</div>
@@ -56,7 +52,7 @@
 				<div class="home__wrapper">
 					<h1 class="home__title">Годовой абонемент на услуги<br><span class="home__title-wrapper">«личного юриста»</span></h1>
 					<p class="home__text">24 часа в сутки Ваш личный юрист<br>– <strong class="home__text-bold">Advogrand</strong> на связи<br>всего <strong class="home__text-bold">за 12 рублей в день</strong></p>
-					<a class="home__button button-link modal-contact" href="javascript:void(0)">Хочу «личного юриста»!</a>
+					<a class="home__button button-link modal-contact__button" href="javascript:void(0)">Хочу «личного юриста»!</a>
 				</div>
 			</div>
 		</section>
@@ -68,49 +64,49 @@
 						<div class="services__card-icon-container">
 							<img class="services__card-icon" src="img/services-icon1.png" alt="Сервис">
 						</div>
-						<a class="services__card-title modal-service1 modal-service" href="javascript:void(0)">Устные<br>консультации</a>
+						<a class="services__card-title modal-service__tab-button1 modal-service__button" href="javascript:void(0)">Устные<br>консультации</a>
 					</div>
 					<div class="services__card">
 						<div class="services__card-icon-container">
 							<img class="services__card-icon" src="img/services-icon2.png" alt="Сервис">
 						</div>
-						<a class="services__card-title modal-service2 modal-service" href="javascript:void(0)">Звонок<br>юриста</a>
+						<a class="services__card-title modal-service__tab-button2 modal-service__button" href="javascript:void(0)">Звонок<br>юриста</a>
 					</div>
 					<div class="services__card">
 						<div class="services__card-icon-container">
 							<img class="services__card-icon" src="img/services-icon3.png" alt="Сервис">
 						</div>
-						<a class="services__card-title modal-service3 modal-service" href="javascript:void(0)">Модели<br>договора</a>
+						<a class="services__card-title modal-service__tab-button3 modal-service__button" href="javascript:void(0)">Модели<br>договора</a>
 					</div>
 					<div class="services__card">
 						<div class="services__card-icon-container">
 							<img class="services__card-icon" src="img/services-icon4.png" alt="Сервис">
 						</div>
-						<a class="services__card-title modal-service4 modal-service" href="javascript:void(0)">Устные<br>бизнес&#8209;консультации</a>
+						<a class="services__card-title modal-service__tab-button4 modal-service__button" href="javascript:void(0)">Устные<br>бизнес&#8209;консультации</a>
 					</div>
 					<div class="services__card">
 						<div class="services__card-icon-container">
 							<img class="services__card-icon" src="img/services-icon5.png" alt="Сервис">
 						</div>
-						<a class="services__card-title modal-service5 modal-service" href="javascript:void(0)">Содействие<br>в переговорах</a>
+						<a class="services__card-title modal-service__tab-button5 modal-service__button" href="javascript:void(0)">Содействие<br>в переговорах</a>
 					</div>
 					<div class="services__card">
 						<div class="services__card-icon-container">
 							<img class="services__card-icon" src="img/services-icon6.png" alt="Сервис">
 						</div>
-						<a class="services__card-title modal-service6 modal-service" href="javascript:void(0)">Обзор изменений<br>в&nbsp;законодательстве</a>
+						<a class="services__card-title modal-service__tab-button6 modal-service__button" href="javascript:void(0)">Обзор изменений<br>в&nbsp;законодательстве</a>
 					</div>
 					<div class="services__card">
 						<div class="services__card-icon-container">
 							<img class="services__card-icon" src="img/services-icon7.png" alt="Сервис">
 						</div>
-						<a class="services__card-title modal-service7 modal-service" href="javascript:void(0)">Письменные<br>консультации</a>
+						<a class="services__card-title modal-service__tab-button7 modal-service__button" href="javascript:void(0)">Письменные<br>консультации</a>
 					</div>
 					<div class="services__card">
 						<div class="services__card-icon-container">
 							<img class="services__card-icon" src="img/services-icon8.png" alt="Сервис">
 						</div>
-						<a class="services__card-title modal-service8 modal-service" href="javascript:void(0)">Консультации<br>в отношении третьих лиц</a>
+						<a class="services__card-title modal-service__tab-button8 modal-service__button" href="javascript:void(0)">Консультации<br>в отношении третьих лиц</a>
 					</div>
 					<div class="services__card">
 						<div class="services__card-icon-container">
@@ -234,7 +230,7 @@
 								<p class="advantages__stats-text"><strong>13 500</strong> - предпринимателей</p>
 							</div>
 							<div class="advantages__stats-button-container">
-								<a class="advantages__stats-button button-link modal-contact" href="javascript:void(0)">Узнать больше!</a>
+								<a class="advantages__stats-button button-link modal-contact__button" href="javascript:void(0)">Узнать больше!</a>
 							</div>
 						</div>
 					</div>
@@ -247,9 +243,15 @@
 					<div class="free-consulting__left">
 						<h2 class="free-consulting__title section__title">Хотите получить бесплатную юридическую консультацию?</h2>
 						<ol class="free-consulting__steps">
-							<li class="free-consulting__step"><p class="free-consulting__step-text">Скачайте наше <a class="free-consulting__step-link" href="#" target="_blank">приложение Reworld</a> для iOS или Android</p></li>
-							<li class="free-consulting__step"><p class="free-consulting__step-text">Посмотрите один из 150  познавательных видеороликов.</p></li>
-							<li class="free-consulting__step"><p class="free-consulting__step-text">Введите Ваш номер телефона и с Вами свяжется юрист для консультации</p></li>
+							<li class="free-consulting__step">
+								<p class="free-consulting__step-text">Скачайте наше <a class="free-consulting__step-link" href="#" target="_blank">приложение Reworld</a> для iOS или Android</p>
+							</li>
+							<li class="free-consulting__step">
+								<p class="free-consulting__step-text">Посмотрите один из 150 познавательных видеороликов.</p>
+							</li>
+							<li class="free-consulting__step">
+								<p class="free-consulting__step-text">Введите Ваш номер телефона и с Вами свяжется юрист для консультации</p>
+							</li>
 						</ol>
 					</div>
 					<div class="free-consulting__right">
@@ -261,187 +263,193 @@
 		</section>
 		<section class="reviews" id="reviews">
 			<div class="reviews__wrapper section">
-				<div class="page-width tab accordion">
-					<h2 class="reviews__title section__title">Отзывы</h2>
-					<a class="reviews__button-mobile accordion__button" href="javascript:void(0)"><p class="reviews__button-mobile-text accordion__text">Все</p><i class="reviews__button-mobile-icon fas fa-angle-down"></i></a>
-					<div class="reviews__buttons accordion__wrapper">
-						<a class="reviews__button tab__button" href="javascript:void(0)">Здравоохранение</a>
-						<a class="reviews__button tab__button" href="javascript:void(0)">Бизнес</a>
-						<a class="reviews__button tab__button" href="javascript:void(0)">Семья</a>
-						<a class="reviews__button tab__button" href="javascript:void(0)">ЖКХ</a>
-						<a class="reviews__button tab__button" href="javascript:void(0)">Недвижимость</a>
-						<a class="reviews__button tab__button tab__button--active" href="javascript:void(0)">Все</a>
-					</div>
-					<div class="reviews__slider slider tab__item">
-						<div class="reviews__slider-container slider__container">
-							<div class="reviews__slider-wrapper slider__wrapper">
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video2 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview2.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video2 modal-video slider__link" href="javascript:void(0)">Название видеоролика</a>
-								</div>
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video4 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview4.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video4 modal-video slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки просто длинное</a>
-								</div>
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video5 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview5.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video5 modal-video slider__link" href="javascript:void(0)">Название видеоролика</a>
-								</div>
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video6 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview6.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video6 modal-video slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки очень длинное</a>
-								</div>
+				<div class="page-width">
+					<div class="reviews__inner-wrapper tab accordion">
+						<h2 class="reviews__title section__title">Отзывы</h2>
+						<a class="reviews__button-mobile accordion__button" href="javascript:void(0)">
+							<p class="reviews__button-mobile-text accordion__button-text">Все</p><i class="reviews__button-mobile-icon fas fa-angle-down"></i>
+						</a>
+						<div class="reviews__buttons accordion__wrapper">
+							<div class="reviews__buttons-wrapper">
+								<a class="reviews__button tab__button" href="javascript:void(0)">Здравоохранение</a>
+								<a class="reviews__button tab__button" href="javascript:void(0)">Бизнес</a>
+								<a class="reviews__button tab__button" href="javascript:void(0)">Семья</a>
+								<a class="reviews__button tab__button" href="javascript:void(0)">ЖКХ</a>
+								<a class="reviews__button tab__button" href="javascript:void(0)">Недвижимость</a>
+								<a class="reviews__button tab__button tab__button--active" href="javascript:void(0)">Все</a>
 							</div>
 						</div>
-						<div class="reviews__slider-buttons">
-							<a class="reviews__slider-button-prev slider__prev" href="javascript:void(0)"><img class="reviews__slider-button-img" src="img/video-button-prev.png" alt="Назад"></a>
-							<a class="reviews__slider-button-next slider__next" href="javascript:void(0)"><img class="reviews__slider-button-img" src="img/video-button-next.png" alt="Вперед"></a>
-						</div>
-					</div>
-					<div class="reviews__slider slider tab__item">
-						<div class="reviews__slider-container slider__container">
-							<div class="reviews__slider-wrapper slider__wrapper">
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video4 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview4.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video4 modal-video slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки просто длинное</a>
-								</div>
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video6 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview6.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video6 modal-video slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки очень длинное</a>
-								</div>
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video7 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview7.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video7 modal-video slider__link" href="javascript:void(0)">Название видеоролика</a>
-								</div>
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video8 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview8.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video8 modal-video slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки очень длинное</a>
+						<div class="reviews__slider-container reviews-slider__container tab__item">
+							<div class="reviews__slider reviews-slider">
+								<div class="reviews__slider-wrapper reviews-slider__wrapper">
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button2 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview2.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button2 modal-video__button reviews-slider__link" href="javascript:void(0)">Название видеоролика</a>
+									</div>
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button4 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview4.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button4 modal-video__button reviews-slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки просто длинное</a>
+									</div>
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button5 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview5.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button5 modal-video__button reviews-slider__link" href="javascript:void(0)">Название видеоролика</a>
+									</div>
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button6 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview6.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button6 modal-video__button reviews-slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки очень длинное</a>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="reviews__slider-buttons">
-							<a class="reviews__slider-button-prev slider__prev" href="javascript:void(0)"><img class="reviews__slider-button-img" src="img/video-button-prev.png" alt="Назад"></a>
-							<a class="reviews__slider-button-next slider__next" href="javascript:void(0)"><img class="reviews__slider-button-img" src="img/video-button-next.png" alt="Вперед"></a>
-						</div>
-					</div>
-					<div class="reviews__slider slider tab__item">
-						<div class="reviews__slider-container slider__container">
-							<div class="reviews__slider-wrapper slider__wrapper">
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video1 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview1.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video1 modal-video slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки просто длинное</a>
-								</div>
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video3 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview3.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video3 modal-video slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки очень длинное</a>
-								</div>
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video4 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview4.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video4 modal-video slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки просто длинное</a>
-								</div>
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video6 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview6.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video6 modal-video slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки очень длинное</a>
-								</div>
+							<div class="reviews__slider-buttons">
+								<a class="reviews__slider-button-prev reviews-slider__prev" href="javascript:void(0)"><img class="reviews__slider-button-img" src="img/video-button-prev.png" alt="Назад"></a>
+								<a class="reviews__slider-button-next reviews-slider__next" href="javascript:void(0)"><img class="reviews__slider-button-img" src="img/video-button-next.png" alt="Вперед"></a>
 							</div>
 						</div>
-						<div class="reviews__slider-buttons">
-							<a class="reviews__slider-button-prev slider__prev" href="javascript:void(0)"><img class="reviews__slider-button-img" src="img/video-button-prev.png" alt="Назад"></a>
-							<a class="reviews__slider-button-next slider__next" href="javascript:void(0)"><img class="reviews__slider-button-img" src="img/video-button-next.png" alt="Вперед"></a>
-						</div>
-					</div>
-					<div class="reviews__slider slider tab__item">
-						<div class="reviews__slider-container slider__container">
-							<div class="reviews__slider-wrapper slider__wrapper">
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video3 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview3.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video3 modal-video slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки очень длинное</a>
-								</div>
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video8 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview8.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video8 modal-video slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки очень длинное</a>
-								</div>
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video2 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview2.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video2 modal-video slider__link" href="javascript:void(0)">Название видеоролика</a>
-								</div>
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video7 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview7.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video7 modal-video slider__link" href="javascript:void(0)">Название видеоролика</a>
+						<div class="reviews__slider-container reviews-slider__container tab__item">
+							<div class="reviews__slider reviews-slider">
+								<div class="reviews__slider-wrapper reviews-slider__wrapper">
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button4 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview4.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button4 modal-video__button reviews-slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки просто длинное</a>
+									</div>
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button6 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview6.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button6 modal-video__button reviews-slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки очень длинное</a>
+									</div>
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button7 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview7.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button7 modal-video__button reviews-slider__link" href="javascript:void(0)">Название видеоролика</a>
+									</div>
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button8 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview8.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button8 modal-video__button reviews-slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки очень длинное</a>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="reviews__slider-buttons">
-							<a class="reviews__slider-button-prev slider__prev" href="javascript:void(0)"><img class="reviews__slider-button-img" src="img/video-button-prev.png" alt="Назад"></a>
-							<a class="reviews__slider-button-next slider__next" href="javascript:void(0)"><img class="reviews__slider-button-img" src="img/video-button-next.png" alt="Вперед"></a>
-						</div>
-					</div>
-					<div class="reviews__slider slider tab__item">
-						<div class="reviews__slider-container slider__container">
-							<div class="reviews__slider-wrapper slider__wrapper">
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video8 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview8.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video8 modal-video slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки очень длинное</a>
-								</div>
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video7 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview7.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video7 modal-video slider__link" href="javascript:void(0)">Название видеоролика</a>
-								</div>
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video1 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview1.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video1 modal-video slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки просто длинное</a>
-								</div>
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video5 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview5.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video5 modal-video slider__link" href="javascript:void(0)">Название видеоролика</a>
-								</div>
+							<div class="reviews__slider-buttons">
+								<a class="reviews__slider-button-prev reviews-slider__prev" href="javascript:void(0)"><img class="reviews__slider-button-img" src="img/video-button-prev.png" alt="Назад"></a>
+								<a class="reviews__slider-button-next reviews-slider__next" href="javascript:void(0)"><img class="reviews__slider-button-img" src="img/video-button-next.png" alt="Вперед"></a>
 							</div>
 						</div>
-						<div class="reviews__slider-buttons">
-							<a class="reviews__slider-button-prev slider__prev" href="javascript:void(0)"><img class="reviews__slider-button-img" src="img/video-button-prev.png" alt="Назад"></a>
-							<a class="reviews__slider-button-next slider__next" href="javascript:void(0)"><img class="reviews__slider-button-img" src="img/video-button-next.png" alt="Вперед"></a>
-						</div>
-					</div>
-					<div class="reviews__slider slider tab__item tab__item--active">
-						<div class="reviews__slider-container slider__container">
-							<div class="reviews__slider-wrapper slider__wrapper">
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video1 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview1.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video1 modal-video slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки просто длинное</a>
-								</div>
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video2 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview2.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video2 modal-video slider__link" href="javascript:void(0)">Название видеоролика</a>
-								</div>
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video3 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview3.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video3 modal-video slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки очень длинное</a>
-								</div>
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video4 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview4.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video4 modal-video slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки просто длинное</a>
-								</div>
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video5 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview5.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video5 modal-video slider__link" href="javascript:void(0)">Название видеоролика</a>
-								</div>
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video6 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview6.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video6 modal-video slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки очень длинное</a>
-								</div>
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video7 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview7.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video7 modal-video slider__link" href="javascript:void(0)">Название видеоролика</a>
-								</div>
-								<div class="reviews__slider-item slider__item">
-									<a class="reviews__slider-video modal-video8 modal-video slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview8.jpg" alt="Видео"></a>
-									<a class="reviews__slider-video-title modal-video8 modal-video slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки очень длинное</a>
+						<div class="reviews__slider-container reviews-slider__container tab__item">
+							<div class="reviews__slider reviews-slider">
+								<div class="reviews__slider-wrapper reviews-slider__wrapper">
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button1 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview1.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button1 modal-video__button reviews-slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки просто длинное</a>
+									</div>
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button3 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview3.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button3 modal-video__button reviews-slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки очень длинное</a>
+									</div>
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button4 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview4.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button4 modal-video__button reviews-slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки просто длинное</a>
+									</div>
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button6 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview6.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button6 modal-video__button reviews-slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки очень длинное</a>
+									</div>
 								</div>
 							</div>
+							<div class="reviews__slider-buttons">
+								<a class="reviews__slider-button-prev reviews-slider__prev" href="javascript:void(0)"><img class="reviews__slider-button-img" src="img/video-button-prev.png" alt="Назад"></a>
+								<a class="reviews__slider-button-next reviews-slider__next" href="javascript:void(0)"><img class="reviews__slider-button-img" src="img/video-button-next.png" alt="Вперед"></a>
+							</div>
 						</div>
-						<div class="reviews__slider-buttons">
-							<a class="reviews__slider-button-prev slider__prev" href="javascript:void(0)"><img class="reviews__slider-button-img" src="img/video-button-prev.png" alt="Назад"></a>
-							<a class="reviews__slider-button-next slider__next" href="javascript:void(0)"><img class="reviews__slider-button-img" src="img/video-button-next.png" alt="Вперед"></a>
+						<div class="reviews__slider-container reviews-slider__container tab__item">
+							<div class="reviews__slider reviews-slider">
+								<div class="reviews__slider-wrapper reviews-slider__wrapper">
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button3 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview3.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button3 modal-video__button reviews-slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки очень длинное</a>
+									</div>
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button8 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview8.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button8 modal-video__button reviews-slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки очень длинное</a>
+									</div>
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button2 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview2.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button2 modal-video__button reviews-slider__link" href="javascript:void(0)">Название видеоролика</a>
+									</div>
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button7 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview7.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button7 modal-video__button reviews-slider__link" href="javascript:void(0)">Название видеоролика</a>
+									</div>
+								</div>
+							</div>
+							<div class="reviews__slider-buttons">
+								<a class="reviews__slider-button-prev reviews-slider__prev" href="javascript:void(0)"><img class="reviews__slider-button-img" src="img/video-button-prev.png" alt="Назад"></a>
+								<a class="reviews__slider-button-next reviews-slider__next" href="javascript:void(0)"><img class="reviews__slider-button-img" src="img/video-button-next.png" alt="Вперед"></a>
+							</div>
+						</div>
+						<div class="reviews__slider-container reviews-slider__container tab__item">
+							<div class="reviews__slider reviews-slider">
+								<div class="reviews__slider-wrapper reviews-slider__wrapper">
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button8 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview8.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button8 modal-video__button reviews-slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки очень длинное</a>
+									</div>
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button7 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview7.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button7 modal-video__button reviews-slider__link" href="javascript:void(0)">Название видеоролика</a>
+									</div>
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button1 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview1.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button1 modal-video__button reviews-slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки просто длинное</a>
+									</div>
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button5 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview5.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button5 modal-video__button reviews-slider__link" href="javascript:void(0)">Название видеоролика</a>
+									</div>
+								</div>
+							</div>
+							<div class="reviews__slider-buttons">
+								<a class="reviews__slider-button-prev reviews-slider__prev" href="javascript:void(0)"><img class="reviews__slider-button-img" src="img/video-button-prev.png" alt="Назад"></a>
+								<a class="reviews__slider-button-next reviews-slider__next" href="javascript:void(0)"><img class="reviews__slider-button-img" src="img/video-button-next.png" alt="Вперед"></a>
+							</div>
+						</div>
+						<div class="reviews__slider-container reviews-slider__container tab__item tab__item--active">
+							<div class="reviews__slider reviews-slider">
+								<div class="reviews__slider-wrapper reviews-slider__wrapper">
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button1 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview1.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button1 modal-video__button reviews-slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки просто длинное</a>
+									</div>
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button2 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview2.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button2 modal-video__button reviews-slider__link" href="javascript:void(0)">Название видеоролика</a>
+									</div>
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button3 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview3.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button3 modal-video__button reviews-slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки очень длинное</a>
+									</div>
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button4 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview4.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button4 modal-video__button reviews-slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки просто длинное</a>
+									</div>
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button5 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview5.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button5 modal-video__button reviews-slider__link" href="javascript:void(0)">Название видеоролика</a>
+									</div>
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button6 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview6.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button6 modal-video__button reviews-slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки очень длинное</a>
+									</div>
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button7 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview7.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button7 modal-video__button reviews-slider__link" href="javascript:void(0)">Название видеоролика</a>
+									</div>
+									<div class="reviews__slider-item reviews-slider__item">
+										<a class="reviews__slider-video modal-video__tab-button8 modal-video__button reviews-slider__link" href="javascript:void(0)"><img class="reviews__slider-video-preview" src="img/reviews-video-preview8.jpg" alt="Видео"></a>
+										<a class="reviews__slider-video-title modal-video__tab-button8 modal-video__button reviews-slider__link" href="javascript:void(0)">Длинное название видеоролика в две строки очень длинное</a>
+									</div>
+								</div>
+							</div>
+							<div class="reviews__slider-buttons">
+								<a class="reviews__slider-button-prev reviews-slider__prev" href="javascript:void(0)"><img class="reviews__slider-button-img" src="img/video-button-prev.png" alt="Назад"></a>
+								<a class="reviews__slider-button-next reviews-slider__next" href="javascript:void(0)"><img class="reviews__slider-button-img" src="img/video-button-next.png" alt="Вперед"></a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -451,46 +459,46 @@
 			<div class="partners__wrapper section">
 				<div class="page-width">
 					<h2 class="partners__title section__title">Партнеры Advogrand</h2>
-					<div class="partners__slider slider">
-						<div class="partners__slider-container slider__container">
-							<div class="partners__slider-wrapper slider__wrapper">
-								<div class="partners__slider-item slider__item">
+					<div class="partners__slider-container partners-slider__container">
+						<div class="partners__slider partners-slider">
+							<div class="partners__slider-wrapper partners-slider__wrapper">
+								<div class="partners__slider-item partners-slider__item">
 									<img class="partners__slider-img" src="img/partners-img1.jpg" alt="Партнёр">
 									<p class="partners__slider-text">«Глобэкс» — российский коммерческий банк. Основан в 1992 году. В 2012 году банк «Глобэкс» вошёл в ежегодный рейтинг надёжности Forbes. Банк попал в группу «Высокая надёжность», заняв 30-е место с рейтингом 4 балла из 5-ти</p>
 								</div>
-								<div class="partners__slider-item slider__item">
+								<div class="partners__slider-item partners-slider__item">
 									<img class="partners__slider-img" src="img/partners-img2.jpg" alt="Партнёр">
 									<p class="partners__slider-text">«Международное физкультурно-спортивное общество «Спартак» имени Н. П. Старостина». В МФСО «Спартак» входят спортивные организации России, Украины, Беларуси, Казахстана, Кыргызстана и Азербайджана, в которых действуют спартаковские советы, клубы и центры.</p>
 								</div>
-								<div class="partners__slider-item slider__item">
+								<div class="partners__slider-item partners-slider__item">
 									<img class="partners__slider-img" src="img/partners-img3.jpg" alt="Партнёр">
 									<p class="partners__slider-text">ООО «БИН Страхование» — универсальный российский страховщик, работающий на рынке страхования и перестрахования с 2000 года. Уставный капитал компании составляет 1,07 млрд. рублей. В соответствии с лицензиями «БИН Страхование» реализует более 50 страховых продуктов.</p>
 								</div>
-								<div class="partners__slider-item slider__item">
+								<div class="partners__slider-item partners-slider__item">
 									<img class="partners__slider-img" src="img/partners-img4.jpg" alt="Партнёр">
 									<p class="partners__slider-text">«Глобэкс» — российский коммерческий банк. Основан в 1992 году. В 2012 году банк «Глобэкс» вошёл в ежегодный рейтинг надёжности Forbes. Банк попал в группу «Высокая надёжность», заняв 30-е место с рейтингом 4 балла из 5-ти</p>
 								</div>
-								<div class="partners__slider-item slider__item">
+								<div class="partners__slider-item partners-slider__item">
 									<img class="partners__slider-img" src="img/partners-img2.jpg" alt="Партнёр">
 									<p class="partners__slider-text">«Международное физкультурно-спортивное общество «Спартак» имени Н. П. Старостина». В МФСО «Спартак» входят спортивные организации России, Украины, Беларуси, Казахстана, Кыргызстана и Азербайджана, в которых действуют спартаковские советы, клубы и центры.</p>
 								</div>
-								<div class="partners__slider-item slider__item">
+								<div class="partners__slider-item partners-slider__item">
 									<img class="partners__slider-img" src="img/partners-img3.jpg" alt="Партнёр">
 									<p class="partners__slider-text">ООО «БИН Страхование» — универсальный российский страховщик, работающий на рынке страхования и перестрахования с 2000 года. Уставный капитал компании составляет 1,07 млрд. рублей. В соответствии с лицензиями «БИН Страхование» реализует более 50 страховых продуктов.</p>
 								</div>
-								<div class="partners__slider-item slider__item">
+								<div class="partners__slider-item partners-slider__item">
 									<img class="partners__slider-img" src="img/partners-img4.jpg" alt="Партнёр">
 									<p class="partners__slider-text">«Глобэкс» — российский коммерческий банк. Основан в 1992 году. В 2012 году банк «Глобэкс» вошёл в ежегодный рейтинг надёжности Forbes. Банк попал в группу «Высокая надёжность», заняв 30-е место с рейтингом 4 балла из 5-ти</p>
 								</div>
-								<div class="partners__slider-item slider__item">
+								<div class="partners__slider-item partners-slider__item">
 									<img class="partners__slider-img" src="img/partners-img1.jpg" alt="Партнёр">
 									<p class="partners__slider-text">«Глобэкс» — российский коммерческий банк. Основан в 1992 году. В 2012 году банк «Глобэкс» вошёл в ежегодный рейтинг надёжности Forbes. Банк попал в группу «Высокая надёжность», заняв 30-е место с рейтингом 4 балла из 5-ти</p>
 								</div>
 							</div>
 						</div>
 						<div class="partners__slider-buttons">
-							<a class="partners__slider-button-prev slider__prev" href="javascript:void(0)"><img class="partners__slider-button-img" src="img/video-button-prev.png" alt="Назад"></a>
-							<a class="partners__slider-button-next slider__next" href="javascript:void(0)"><img class="partners__slider-button-img" src="img/video-button-next.png" alt="Вперед"></a>
+							<a class="partners__slider-button-prev partners-slider__prev" href="javascript:void(0)"><img class="partners__slider-button-img" src="img/video-button-prev.png" alt="Назад"></a>
+							<a class="partners__slider-button-next partners-slider__next" href="javascript:void(0)"><img class="partners__slider-button-img" src="img/video-button-next.png" alt="Вперед"></a>
 						</div>
 					</div>
 				</div>
@@ -539,7 +547,7 @@
 									<p class="rates__tab1-card-price-text rates__tab-card-price-text">Цена:</p>
 									<p class="rates__tab1-card-price-cost rates__tab-card-price-cost">65 $ за год</p>
 									<div class="rates__tab1-card-buttons rates__tab-card-buttons">
-										<a class="rates__tab1-card-button rates__tab-card-button rates__tab1-card1-button1 rates__tab-card1-button1 button-link modal-contact" href="javascript:void(0)">Консультация</a>
+										<a class="rates__tab1-card-button rates__tab-card-button rates__tab1-card1-button1 rates__tab-card1-button1 button-link modal-contact__button" href="javascript:void(0)">Консультация</a>
 										<a class="rates__tab1-card-button rates__tab-card-button rates__tab1-card-button2 button-link" href="#">Купить</a>
 									</div>
 								</div>
@@ -576,7 +584,7 @@
 									<p class="rates__tab1-card-price-text rates__tab-card-price-text">Цена:</p>
 									<p class="rates__tab1-card-price-cost rates__tab-card-price-cost">130 $ за год</p>
 									<div class="rates__tab1-card-buttons rates__tab-card-buttons">
-										<a class="rates__tab1-card-button rates__tab-card-button rates__tab1-card2-button1 rates__tab-card2-button1 button-link modal-contact" href="javascript:void(0)">Консультация</a>
+										<a class="rates__tab1-card-button rates__tab-card-button rates__tab1-card2-button1 rates__tab-card2-button1 button-link modal-contact__button" href="javascript:void(0)">Консультация</a>
 										<a class="rates__tab1-card-button rates__tab-card-button rates__tab1-card-button2 button-link" href="#">Купить</a>
 									</div>
 								</div>
@@ -619,7 +627,7 @@
 									<p class="rates__tab1-card-price-text rates__tab-card-price-text">Цена:</p>
 									<p class="rates__tab1-card-price-cost rates__tab-card-price-cost">265 $ за год</p>
 									<div class="rates__tab1-card-buttons rates__tab-card-buttons">
-										<a class="rates__tab1-card-button rates__tab-card-button rates__tab1-card3-button1 rates__tab-card3-button1 button-link modal-contact" href="javascript:void(0)">Консультация</a>
+										<a class="rates__tab1-card-button rates__tab-card-button rates__tab1-card3-button1 rates__tab-card3-button1 button-link modal-contact__button" href="javascript:void(0)">Консультация</a>
 										<a class="rates__tab1-card-button rates__tab-card-button rates__tab1-card-button2 button-link" href="#">Купить</a>
 									</div>
 								</div>
@@ -658,7 +666,7 @@
 								<p class="rates__tab2-card-price-text rates__tab-card-price-text">Цена:</p>
 								<p class="rates__tab2-card-price-cost rates__tab-card-price-cost">65 $ за год</p>
 								<div class="rates__tab2-card-buttons rates__tab-card-buttons">
-									<a class="rates__tab2-card-button rates__tab-card-button rates__tab2-card1-button1 rates__tab-card1-button1 button-link modal-contact" href="javascript:void(0)">Консультация</a>
+									<a class="rates__tab2-card-button rates__tab-card-button rates__tab2-card1-button1 rates__tab-card1-button1 button-link modal-contact__button" href="javascript:void(0)">Консультация</a>
 									<a class="rates__tab2-card-button rates__tab-card-button rates__tab2-card-button2 button-link" href="#">Купить</a>
 								</div>
 							</div>
@@ -697,7 +705,7 @@
 								<p class="rates__tab2-card-price-text rates__tab-card-price-text">Цена:</p>
 								<p class="rates__tab2-card-price-cost rates__tab-card-price-cost">130 $ за год</p>
 								<div class="rates__tab2-card-buttons rates__tab-card-buttons">
-									<a class="rates__tab2-card-button rates__tab-card-button rates__tab2-card2-button1 rates__tab-card2-button1 button-link modal-contact" href="javascript:void(0)">Консультация</a>
+									<a class="rates__tab2-card-button rates__tab-card-button rates__tab2-card2-button1 rates__tab-card2-button1 button-link modal-contact__button" href="javascript:void(0)">Консультация</a>
 									<a class="rates__tab2-card-button rates__tab-card-button rates__tab2-card-button2 button-link" href="#">Купить</a>
 								</div>
 							</div>
@@ -736,7 +744,7 @@
 								<p class="rates__tab2-card-price-text rates__tab-card-price-text">Цена:</p>
 								<p class="rates__tab2-card-price-cost rates__tab-card-price-cost">265 $ за год</p>
 								<div class="rates__tab2-card-buttons rates__tab-card-buttons">
-									<a class="rates__tab2-card-button rates__tab-card-button rates__tab2-card3-button1 rates__tab-card3-button1 button-link modal-contact" href="javascript:void(0)">Консультация</a>
+									<a class="rates__tab2-card-button rates__tab-card-button rates__tab2-card3-button1 rates__tab-card3-button1 button-link modal-contact__button" href="javascript:void(0)">Консультация</a>
 									<a class="rates__tab2-card-button rates__tab-card-button rates__tab2-card-button2 button-link" href="#">Купить</a>
 								</div>
 							</div>
@@ -800,18 +808,18 @@
 	</footer>
 	<div class="hamburger">
 		<div class="hamburger__wrapper">
-			<ul class="hamburger__nav">
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="#how-work">Как мы работаем</a></li>
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="#reviews">Отзывы</a></li>
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="#rates">Тарифы</a></li>
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="#partners">Партнеры</a></li>
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="#contact">Контакты</a></li>
-			</ul>
+			<nav class="hamburger__nav">
+				<a class="hamburger__nav-link" href="#how-work">Как мы работаем</a>
+				<a class="hamburger__nav-link" href="#reviews">Отзывы</a>
+				<a class="hamburger__nav-link" href="#rates">Тарифы</a>
+				<a class="hamburger__nav-link" href="#partners">Партнеры</a>
+				<a class="hamburger__nav-link" href="#contact">Контакты</a>
+			</nav>
 		</div>
 	</div>
 	<div class="modals">
-		<div class="modal">
-			<div class="modal__body">
+		<div class="modal-contact modal">
+			<div class="modal__wrapper">
 				<div class="modal__content-contact modal__content">
 					<button class="modal__close">&times;</button>
 					<h3 class="modal__title section__title">Связаться с нами</h3>
@@ -834,11 +842,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="modal">
-			<div class="modal__body">
+		<div class="modal-service modal">
+			<div class="modal__wrapper">
 				<div class="modal__content-service modal__content">
 					<button class="modal__close">&times;</button>
-					<div class="modal__service">
+					<div class="modal__service modal-service__tab">
 						<h3 class="modal__title">Устные консультации</h3>
 						<img class="modal__service-img" src="img/modal-service-img1.jpg" alt="Услуга">
 						<div class="modal__service-article">
@@ -848,7 +856,7 @@
 							<p class="modal__service-note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
 						</div>
 					</div>
-					<div class="modal__service">
+					<div class="modal__service modal-service__tab">
 						<h3 class="modal__title">Звонок юриста</h3>
 						<img class="modal__service-img" src="img/modal-service-img2.jpg" alt="Услуга">
 						<div class="modal__service-article">
@@ -858,7 +866,7 @@
 							<p class="modal__service-note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
 						</div>
 					</div>
-					<div class="modal__service">
+					<div class="modal__service modal-service__tab">
 						<h3 class="modal__title">Модели договора</h3>
 						<img class="modal__service-img" src="img/modal-service-img3.jpg" alt="Услуга">
 						<div class="modal__service-article">
@@ -868,7 +876,7 @@
 							<p class="modal__service-note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
 						</div>
 					</div>
-					<div class="modal__service">
+					<div class="modal__service modal-service__tab">
 						<h3 class="modal__title">Устные бизнес-консультации</h3>
 						<img class="modal__service-img" src="img/modal-service-img4.jpg" alt="Услуга">
 						<div class="modal__service-article">
@@ -878,7 +886,7 @@
 							<p class="modal__service-note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
 						</div>
 					</div>
-					<div class="modal__service">
+					<div class="modal__service modal-service__tab">
 						<h3 class="modal__title">Содействие в переговорах</h3>
 						<img class="modal__service-img" src="img/modal-service-img5.jpg" alt="Услуга">
 						<div class="modal__service-article">
@@ -888,7 +896,7 @@
 							<p class="modal__service-note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
 						</div>
 					</div>
-					<div class="modal__service">
+					<div class="modal__service modal-service__tab">
 						<h3 class="modal__title">Обзор изменений в законодательстве</h3>
 						<img class="modal__service-img" src="img/modal-service-img6.jpg" alt="Услуга">
 						<div class="modal__service-article">
@@ -898,7 +906,7 @@
 							<p class="modal__service-note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
 						</div>
 					</div>
-					<div class="modal__service">
+					<div class="modal__service modal-service__tab">
 						<h3 class="modal__title">Письменные консультации</h3>
 						<img class="modal__service-img" src="img/modal-service-img7.jpg" alt="Услуга">
 						<div class="modal__service-article">
@@ -908,7 +916,7 @@
 							<p class="modal__service-note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
 						</div>
 					</div>
-					<div class="modal__service">
+					<div class="modal__service modal-service__tab">
 						<h3 class="modal__title">Консультации в отношении третьих лиц</h3>
 						<img class="modal__service-img" src="img/modal-service-img8.jpg" alt="Услуга">
 						<div class="modal__service-article">
@@ -921,24 +929,24 @@
 				</div>
 			</div>
 		</div>
-		<div class="modal">
-			<div class="modal__body">
+		<div class="modal-video modal">
+			<div class="modal__wrapper">
 				<div class="modal__content-video modal__content">
 					<button class="modal__close">&times;</button>
 					<div class="modal__video-container">
-						<iframe class="modal__video" src="https://www.youtube.com/embed/nvkSt9jNNRE?enablejsapi=1" allowfullscreen></iframe>
-						<iframe class="modal__video" src="https://www.youtube.com/embed/GEZ39uoVqTY?enablejsapi=1" allowfullscreen></iframe>
-						<iframe class="modal__video" src="https://www.youtube.com/embed/RkhNiX5p72s?enablejsapi=1" allowfullscreen></iframe>
-						<iframe class="modal__video" src="https://www.youtube.com/embed/sH76-rdG64o?enablejsapi=1" allowfullscreen></iframe>
-						<iframe class="modal__video" src="https://www.youtube.com/embed/uDJFpmjd8QA?enablejsapi=1" allowfullscreen></iframe>
-						<iframe class="modal__video" src="https://www.youtube.com/embed/tRggUdtWpiU?enablejsapi=1" allowfullscreen></iframe>
-						<iframe class="modal__video" src="https://www.youtube.com/embed/ABFy-ekod4I?enablejsapi=1" allowfullscreen></iframe>
-						<iframe class="modal__video" src="https://www.youtube.com/embed/7NAbkrADKxk?enablejsapi=1" allowfullscreen></iframe>
+						<iframe class="modal__video modal-video__tab" src="https://www.youtube.com/embed/nvkSt9jNNRE?enablejsapi=1" allowfullscreen></iframe>
+						<iframe class="modal__video modal-video__tab" src="https://www.youtube.com/embed/GEZ39uoVqTY?enablejsapi=1" allowfullscreen></iframe>
+						<iframe class="modal__video modal-video__tab" src="https://www.youtube.com/embed/RkhNiX5p72s?enablejsapi=1" allowfullscreen></iframe>
+						<iframe class="modal__video modal-video__tab" src="https://www.youtube.com/embed/sH76-rdG64o?enablejsapi=1" allowfullscreen></iframe>
+						<iframe class="modal__video modal-video__tab" src="https://www.youtube.com/embed/uDJFpmjd8QA?enablejsapi=1" allowfullscreen></iframe>
+						<iframe class="modal__video modal-video__tab" src="https://www.youtube.com/embed/tRggUdtWpiU?enablejsapi=1" allowfullscreen></iframe>
+						<iframe class="modal__video modal-video__tab" src="https://www.youtube.com/embed/ABFy-ekod4I?enablejsapi=1" allowfullscreen></iframe>
+						<iframe class="modal__video modal-video__tab" src="https://www.youtube.com/embed/7NAbkrADKxk?enablejsapi=1" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script src="script/script.js"></script>
+	<script src="js/bundle.min.js"></script>
 </body>
 </html>

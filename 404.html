@@ -5,32 +5,28 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<!--FAVICONS-->
-  <link rel="icon" href="img/favicons/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-	<!---->
-	<!--FONTS-->
+	<link rel="icon" href="img/favicons/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
 	<script src="https://kit.fontawesome.com/4c1e25a77a.js" crossorigin="anonymous"></script>
-	<!---->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="error-404__body">
+<body>
 	<header class="header">
 		<div class="header__top fixed-item">
 			<div class="page-width">
 				<div class="header__top-wrapper">
 					<a class="header__top-phone" href="tel:+74993228580">+7 499 322-85-80</a>
-					<ul class="header__top-nav">
-						<li class="header__top-nav-item"><a class="header__top-nav-link" href="#how-work">Как мы работаем</a></li>
-						<li class="header__top-nav-item"><a class="header__top-nav-link" href="#advantages">Преимущества</a></li>
-						<li class="header__top-nav-item"><a class="header__top-nav-link" href="#reviews">Отзывы</a></li>
-						<li class="header__top-nav-item"><a class="header__top-nav-link" href="#rates">Тарифы</a></li>
-						<li class="header__top-nav-item"><a class="header__top-nav-link" href="#partners">Партнеры</a></li>
-						<li class="header__top-nav-item"><a class="header__top-nav-link" href="#contact">Контакты</a></li>
-					</ul>
+					<nav class="header__top-nav">
+						<a class="header__top-nav-link" href="#how-work">Как мы работаем</a>
+						<a class="header__top-nav-link" href="#advantages">Преимущества</a>
+						<a class="header__top-nav-link" href="#reviews">Отзывы</a>
+						<a class="header__top-nav-link" href="#rates">Тарифы</a>
+						<a class="header__top-nav-link" href="#partners">Партнеры</a>
+						<a class="header__top-nav-link" href="#contact">Контакты</a>
+					</nav>
 					<div class="header__top-right">
-						<a class="header__top-button modal-contact" href="javascript:void(0)">Перезвоните мне</a>
-						<button class="header__hamburger hamburger__button"><i class="fas fa-bars"></i></button>
+						<a class="header__top-button modal-contact__button" href="javascript:void(0)">Перезвоните мне</a>
+						<button class="header__hamburger hamburger__button" aria-label="Open navigation"><i class="fas fa-bars"></i></button>
 					</div>
 				</div>
 			</div>
@@ -52,8 +48,9 @@
 	</header>
 	<section class="error-404">
 		<div class="page-width">
-			<div class="error-404__article">
-				<h2 class="error-404__title"><span class="error-404__number">404</span><br>не найдено</h2>
+			<div class="error-404__wrapper">
+				<p class="error-404__number">404</p>
+				<h2 class="error-404__title">не найдено</h2>
 				<p class="error-404__text">Данная страница не была найдена на нашем сервере. Она не существует или могла быть удалена.</p>
 			</div>
 		</div>
@@ -68,18 +65,18 @@
 	</footer>
 	<div class="hamburger">
 		<div class="hamburger__wrapper">
-			<ul class="hamburger__nav">
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="#how-work">Как мы работаем</a></li>
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="#reviews">Отзывы</a></li>
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="#rates">Тарифы</a></li>
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="#partners">Партнеры</a></li>
-				<li class="hamburger__nav-item"><a class="hamburger__nav-link" href="#contact">Контакты</a></li>
-			</ul>
+			<nav class="hamburger__nav">
+				<a class="hamburger__nav-link" href="#how-work">Как мы работаем</a>
+				<a class="hamburger__nav-link" href="#reviews">Отзывы</a>
+				<a class="hamburger__nav-link" href="#rates">Тарифы</a>
+				<a class="hamburger__nav-link" href="#partners">Партнеры</a>
+				<a class="hamburger__nav-link" href="#contact">Контакты</a>
+			</nav>
 		</div>
 	</div>
 	<div class="modals">
-		<div class="modal">
-			<div class="modal__body">
+		<div class="modal-contact modal">
+			<div class="modal__wrapper">
 				<div class="modal__content-contact modal__content">
 					<button class="modal__close">&times;</button>
 					<h3 class="modal__title section__title">Связаться с нами</h3>
@@ -102,11 +99,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="modal">
-			<div class="modal__body">
+		<div class="modal-service modal">
+			<div class="modal__wrapper">
 				<div class="modal__content-service modal__content">
 					<button class="modal__close">&times;</button>
-					<div class="modal__service">
+					<div class="modal__service modal-service__tab">
 						<h3 class="modal__title">Устные консультации</h3>
 						<img class="modal__service-img" src="img/modal-service-img1.jpg" alt="Услуга">
 						<div class="modal__service-article">
@@ -116,7 +113,7 @@
 							<p class="modal__service-note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
 						</div>
 					</div>
-					<div class="modal__service">
+					<div class="modal__service modal-service__tab">
 						<h3 class="modal__title">Звонок юриста</h3>
 						<img class="modal__service-img" src="img/modal-service-img2.jpg" alt="Услуга">
 						<div class="modal__service-article">
@@ -126,7 +123,7 @@
 							<p class="modal__service-note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
 						</div>
 					</div>
-					<div class="modal__service">
+					<div class="modal__service modal-service__tab">
 						<h3 class="modal__title">Модели договора</h3>
 						<img class="modal__service-img" src="img/modal-service-img3.jpg" alt="Услуга">
 						<div class="modal__service-article">
@@ -136,7 +133,7 @@
 							<p class="modal__service-note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
 						</div>
 					</div>
-					<div class="modal__service">
+					<div class="modal__service modal-service__tab">
 						<h3 class="modal__title">Устные бизнес-консультации</h3>
 						<img class="modal__service-img" src="img/modal-service-img4.jpg" alt="Услуга">
 						<div class="modal__service-article">
@@ -146,7 +143,7 @@
 							<p class="modal__service-note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
 						</div>
 					</div>
-					<div class="modal__service">
+					<div class="modal__service modal-service__tab">
 						<h3 class="modal__title">Содействие в переговорах</h3>
 						<img class="modal__service-img" src="img/modal-service-img5.jpg" alt="Услуга">
 						<div class="modal__service-article">
@@ -156,7 +153,7 @@
 							<p class="modal__service-note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
 						</div>
 					</div>
-					<div class="modal__service">
+					<div class="modal__service modal-service__tab">
 						<h3 class="modal__title">Обзор изменений в законодательстве</h3>
 						<img class="modal__service-img" src="img/modal-service-img6.jpg" alt="Услуга">
 						<div class="modal__service-article">
@@ -166,7 +163,7 @@
 							<p class="modal__service-note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
 						</div>
 					</div>
-					<div class="modal__service">
+					<div class="modal__service modal-service__tab">
 						<h3 class="modal__title">Письменные консультации</h3>
 						<img class="modal__service-img" src="img/modal-service-img7.jpg" alt="Услуга">
 						<div class="modal__service-article">
@@ -176,7 +173,7 @@
 							<p class="modal__service-note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
 						</div>
 					</div>
-					<div class="modal__service">
+					<div class="modal__service modal-service__tab">
 						<h3 class="modal__title">Консультации в отношении третьих лиц</h3>
 						<img class="modal__service-img" src="img/modal-service-img8.jpg" alt="Услуга">
 						<div class="modal__service-article">
@@ -189,24 +186,24 @@
 				</div>
 			</div>
 		</div>
-		<div class="modal">
-			<div class="modal__body">
+		<div class="modal-video modal">
+			<div class="modal__wrapper">
 				<div class="modal__content-video modal__content">
 					<button class="modal__close">&times;</button>
 					<div class="modal__video-container">
-						<iframe class="modal__video" src="https://www.youtube.com/embed/nvkSt9jNNRE?enablejsapi=1" allowfullscreen></iframe>
-						<iframe class="modal__video" src="https://www.youtube.com/embed/GEZ39uoVqTY?enablejsapi=1" allowfullscreen></iframe>
-						<iframe class="modal__video" src="https://www.youtube.com/embed/RkhNiX5p72s?enablejsapi=1" allowfullscreen></iframe>
-						<iframe class="modal__video" src="https://www.youtube.com/embed/sH76-rdG64o?enablejsapi=1" allowfullscreen></iframe>
-						<iframe class="modal__video" src="https://www.youtube.com/embed/uDJFpmjd8QA?enablejsapi=1" allowfullscreen></iframe>
-						<iframe class="modal__video" src="https://www.youtube.com/embed/tRggUdtWpiU?enablejsapi=1" allowfullscreen></iframe>
-						<iframe class="modal__video" src="https://www.youtube.com/embed/ABFy-ekod4I?enablejsapi=1" allowfullscreen></iframe>
-						<iframe class="modal__video" src="https://www.youtube.com/embed/7NAbkrADKxk?enablejsapi=1" allowfullscreen></iframe>
+						<iframe class="modal__video modal-video__tab" src="https://www.youtube.com/embed/nvkSt9jNNRE?enablejsapi=1" allowfullscreen></iframe>
+						<iframe class="modal__video modal-video__tab" src="https://www.youtube.com/embed/GEZ39uoVqTY?enablejsapi=1" allowfullscreen></iframe>
+						<iframe class="modal__video modal-video__tab" src="https://www.youtube.com/embed/RkhNiX5p72s?enablejsapi=1" allowfullscreen></iframe>
+						<iframe class="modal__video modal-video__tab" src="https://www.youtube.com/embed/sH76-rdG64o?enablejsapi=1" allowfullscreen></iframe>
+						<iframe class="modal__video modal-video__tab" src="https://www.youtube.com/embed/uDJFpmjd8QA?enablejsapi=1" allowfullscreen></iframe>
+						<iframe class="modal__video modal-video__tab" src="https://www.youtube.com/embed/tRggUdtWpiU?enablejsapi=1" allowfullscreen></iframe>
+						<iframe class="modal__video modal-video__tab" src="https://www.youtube.com/embed/ABFy-ekod4I?enablejsapi=1" allowfullscreen></iframe>
+						<iframe class="modal__video modal-video__tab" src="https://www.youtube.com/embed/7NAbkrADKxk?enablejsapi=1" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script src="script/script.js"></script>
+	<script src="js/bundle.min.js"></script>
 </body>
 </html>

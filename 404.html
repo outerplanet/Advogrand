@@ -3,12 +3,13 @@
 <head>
 	<title>404 не найдено</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="icon" href="img/favicons/favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
 	<script src="https://kit.fontawesome.com/4c1e25a77a.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/style.min.css">
+	<script src="js/bundle.min.js" defer></script>
 </head>
 <body>
 	<header class="header">
@@ -26,7 +27,9 @@
 					</nav>
 					<div class="header__top-right">
 						<a class="header__top-button modal-contact__button" href="javascript:void(0)">Перезвоните мне</a>
-						<button class="header__hamburger hamburger__button" aria-label="Open navigation"><i class="fas fa-bars"></i></button>
+						<button class="header__hamburger hamburger__button" aria-label="Открыть навигацию">
+							<i class="fas fa-bars"></i>
+						</button>
 					</div>
 				</div>
 			</div>
@@ -34,13 +37,19 @@
 		</div>
 		<div class="page-width">
 			<div class="header__content">
-				<a class="header__content-logo" href="/"><img class="header__content-logo-img" src="img/logo1.png" alt="Advogrand"></a>
+				<a class="header__content-logo" href="/" aria-label="Главная страница">
+					<img class="header__content-logo-img" src="img/logo1.png" alt="Лого">
+				</a>
 				<p class="header__content-text">Ваш личный юрист всегда на связи</p>
 				<div class="header__content-right">
 					<a class="header__content-phone" href="tel:+74993228580">+7 499 322-85-80</a>
 					<div class="header__content-icons">
-						<a class="header__content-icon" href="#" target="_blank"><img class="header__content-icon-img" src="img/header-icon1.png" alt="Android"></a>
-						<a class="header__content-icon" href="#" target="_blank"><img class="header__content-icon-img" src="img/header-icon2.png" alt="IPhone"></a>
+						<a class="header__content-icon" href="#" target="_blank">
+							<img class="header__content-icon-img" src="img/header-icon1.png" alt="Android">
+						</a>
+						<a class="header__content-icon" href="#" target="_blank">
+							<img class="header__content-icon-img" src="img/header-icon2.png" alt="IPhone">
+						</a>
 					</div>
 				</div>
 			</div>
@@ -58,7 +67,9 @@
 	<footer class="footer">
 		<div class="page-width">
 			<div class="footer__wrapper">
-				<a class="footer__logo" href="/"><img class="footer__logo-img" src="img/logo2.png" alt="Advogrand"></a>
+				<a class="footer__logo" href="/">
+					<img class="footer__logo-img" src="img/logo2.png" alt="Лого">
+				</a>
 				<p class="footer__text">Разработка сайта: Black Soul</p>
 			</div>
 		</div>
@@ -77,10 +88,10 @@
 	<div class="modals">
 		<div class="modal-contact modal">
 			<div class="modal__wrapper">
-				<div class="modal__content-contact modal__content">
+				<div class="modal-contact__content modal__content">
 					<button class="modal__close">&times;</button>
 					<h3 class="modal__title section__title">Связаться с нами</h3>
-					<form class="contact-form" method="post" action="#">
+					<form class="contact-form" action="#" method="post">
 						<div class="contact-form-input-container">
 							<label class="contact-form-label" for="mod-contact-form-input-name">Введите своё имя</label>
 							<input class="contact-form-input contact-form-input-name-required" id="mod-contact-form-input-name" type="text" name="name" required>
@@ -101,86 +112,88 @@
 		</div>
 		<div class="modal-service modal">
 			<div class="modal__wrapper">
-				<div class="modal__content-service modal__content">
+				<div class="modal-service__content modal__content">
 					<button class="modal__close">&times;</button>
-					<div class="modal__service modal-service__tab">
-						<h3 class="modal__title">Устные консультации</h3>
-						<img class="modal__service-img" src="img/modal-service-img1.jpg" alt="Услуга">
-						<div class="modal__service-article">
-							<p class="modal__service-text1">Как часто бывает, когда нарушается права потребителя:</p>
-							<p class="modal__service-text2">«Осенью покупал недешевые часы в крупном магазине. На третий день надевал куртку и стекло циферблата задел о застежки манжета, отчего стекло лопнуло. Приношу в магазин - отправляем на экспертизу. Только в конце ноября пришел результат экспертизы: не гарантийный случай, оплата за ремонт и замену стекла 1900 рублей и часы снимаются с гарантийного ремонта. Решил согласиться, потому что часы впали в душу... Пришли с ремонта только в середине зимы. Прихожу в магазин забирать долгожданные часы. На этот момент я уже стал клиентом Advogrand. Звоню, объясняю ситуацию, получаю подробнейший алгоритм действий. На восьмой день мне звонит директор этого магазина просит прийти за часами.<br>В итоге: так как в тех паспорте часов написано противоударное стекло - мне возвращают деньги за ремонт, ставят часы на гарантию, и из-за длительного времени ожидания в качестве морального ущерба возвращают полностью стоимость часов»</p>
-							<p class="modal__service-author">Михаил, 40 лет</p>
-							<p class="modal__service-note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
+					<div class="modal-service__tabs">
+						<div class="modal-service__tab">
+							<h3 class="modal__title">Устные консультации</h3>
+							<img class="modal-service__img" src="img/modal-service-img1.jpg" alt="Услуга">
+							<div class="modal-service__article">
+								<p class="modal-service__text1">Как часто бывает, когда нарушается права потребителя:</p>
+								<p class="modal-service__text2">«Осенью покупал недешевые часы в крупном магазине. На третий день надевал куртку и стекло циферблата задел о застежки манжета, отчего стекло лопнуло. Приношу в магазин - отправляем на экспертизу. Только в конце ноября пришел результат экспертизы: не гарантийный случай, оплата за ремонт и замену стекла 1900 рублей и часы снимаются с гарантийного ремонта. Решил согласиться, потому что часы впали в душу... Пришли с ремонта только в середине зимы. Прихожу в магазин забирать долгожданные часы. На этот момент я уже стал клиентом Advogrand. Звоню, объясняю ситуацию, получаю подробнейший алгоритм действий. На восьмой день мне звонит директор этого магазина просит прийти за часами. <br> В итоге: так как в тех паспорте часов написано противоударное стекло - мне возвращают деньги за ремонт, ставят часы на гарантию, и из-за длительного времени ожидания в качестве морального ущерба возвращают полностью стоимость часов»</p>
+								<p class="modal-service__author">Михаил, 40 лет</p>
+								<p class="modal-service__note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
+							</div>
 						</div>
-					</div>
-					<div class="modal__service modal-service__tab">
-						<h3 class="modal__title">Звонок юриста</h3>
-						<img class="modal__service-img" src="img/modal-service-img2.jpg" alt="Услуга">
-						<div class="modal__service-article">
-							<p class="modal__service-text1">Как часто бывает, когда нарушается права потребителя:</p>
-							<p class="modal__service-text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum at iure esse rerum nostrum, veniam earum repellat voluptatibus distinctio, labore quis, quisquam perspiciatis atque alias velit recusandae repellendus consequatur sapiente, harum dolores asperiores ut expedita optio. Itaque eos dignissimos, tempore!</p>
-							<p class="modal__service-author">Михаил, 40 лет</p>
-							<p class="modal__service-note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
+						<div class="modal-service__tab">
+							<h3 class="modal__title">Звонок юриста</h3>
+							<img class="modal-service__img" src="img/modal-service-img2.jpg" alt="Услуга">
+							<div class="modal-service__article">
+								<p class="modal-service__text1">Как часто бывает, когда нарушается права потребителя:</p>
+								<p class="modal-service__text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum at iure esse rerum nostrum, veniam earum repellat voluptatibus distinctio, labore quis, quisquam perspiciatis atque alias velit recusandae repellendus consequatur sapiente, harum dolores asperiores ut expedita optio. Itaque eos dignissimos, tempore!</p>
+								<p class="modal-service__author">Михаил, 40 лет</p>
+								<p class="modal-service__note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
+							</div>
 						</div>
-					</div>
-					<div class="modal__service modal-service__tab">
-						<h3 class="modal__title">Модели договора</h3>
-						<img class="modal__service-img" src="img/modal-service-img3.jpg" alt="Услуга">
-						<div class="modal__service-article">
-							<p class="modal__service-text1">Как часто бывает, когда нарушается права потребителя:</p>
-							<p class="modal__service-text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis fugiat atque, dolores nulla in reiciendis libero dignissimos cum voluptatem provident dolorem hic illum rerum, saepe fuga, iste cumque doloremque ea? Autem itaque illo consequatur deserunt, eum, libero fugit cumque officiis similique culpa minima, nam sapiente sint ex architecto maiores esse atque, magnam ipsam vel doloribus molestias error commodi voluptas? Dolorum.</p>
-							<p class="modal__service-author">Михаил, 40 лет</p>
-							<p class="modal__service-note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
+						<div class="modal-service__tab">
+							<h3 class="modal__title">Модели договора</h3>
+							<img class="modal-service__img" src="img/modal-service-img3.jpg" alt="Услуга">
+							<div class="modal-service__article">
+								<p class="modal-service__text1">Как часто бывает, когда нарушается права потребителя:</p>
+								<p class="modal-service__text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis fugiat atque, dolores nulla in reiciendis libero dignissimos cum voluptatem provident dolorem hic illum rerum, saepe fuga, iste cumque doloremque ea? Autem itaque illo consequatur deserunt, eum, libero fugit cumque officiis similique culpa minima, nam sapiente sint ex architecto maiores esse atque, magnam ipsam vel doloribus molestias error commodi voluptas? Dolorum.</p>
+								<p class="modal-service__author">Михаил, 40 лет</p>
+								<p class="modal-service__note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
+							</div>
 						</div>
-					</div>
-					<div class="modal__service modal-service__tab">
-						<h3 class="modal__title">Устные бизнес-консультации</h3>
-						<img class="modal__service-img" src="img/modal-service-img4.jpg" alt="Услуга">
-						<div class="modal__service-article">
-							<p class="modal__service-text1">Как часто бывает, когда нарушается права потребителя:</p>
-							<p class="modal__service-text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore aperiam suscipit esse, ratione odio nesciunt eveniet corrupti sint qui neque.</p>
-							<p class="modal__service-author">Михаил, 40 лет</p>
-							<p class="modal__service-note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
+						<div class="modal-service__tab">
+							<h3 class="modal__title">Устные бизнес-консультации</h3>
+							<img class="modal-service__img" src="img/modal-service-img4.jpg" alt="Услуга">
+							<div class="modal-service__article">
+								<p class="modal-service__text1">Как часто бывает, когда нарушается права потребителя:</p>
+								<p class="modal-service__text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore aperiam suscipit esse, ratione odio nesciunt eveniet corrupti sint qui neque.</p>
+								<p class="modal-service__author">Михаил, 40 лет</p>
+								<p class="modal-service__note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
+							</div>
 						</div>
-					</div>
-					<div class="modal__service modal-service__tab">
-						<h3 class="modal__title">Содействие в переговорах</h3>
-						<img class="modal__service-img" src="img/modal-service-img5.jpg" alt="Услуга">
-						<div class="modal__service-article">
-							<p class="modal__service-text1">Как часто бывает, когда нарушается права потребителя:</p>
-							<p class="modal__service-text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A tempore veritatis nam obcaecati tenetur, autem ullam incidunt quod placeat quaerat unde sapiente alias temporibus magnam eaque quibusdam atque! Sit deserunt autem accusamus similique optio quis iure accusantium quidem molestiae, omnis iusto fugit et beatae mollitia ea, nam culpa porro quia. Explicabo autem eos iste quasi cumque cum perferendis magnam architecto reiciendis provident natus at veritatis optio nobis, mollitia voluptate libero consectetur neque sequi quisquam tenetur fuga. Officiis neque, molestias dignissimos.</p>
-							<p class="modal__service-author">Михаил, 40 лет</p>
-							<p class="modal__service-note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
+						<div class="modal-service__tab">
+							<h3 class="modal__title">Содействие в переговорах</h3>
+							<img class="modal-service__img" src="img/modal-service-img5.jpg" alt="Услуга">
+							<div class="modal-service__article">
+								<p class="modal-service__text1">Как часто бывает, когда нарушается права потребителя:</p>
+								<p class="modal-service__text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A tempore veritatis nam obcaecati tenetur, autem ullam incidunt quod placeat quaerat unde sapiente alias temporibus magnam eaque quibusdam atque! Sit deserunt autem accusamus similique optio quis iure accusantium quidem molestiae, omnis iusto fugit et beatae mollitia ea, nam culpa porro quia. Explicabo autem eos iste quasi cumque cum perferendis magnam architecto reiciendis provident natus at veritatis optio nobis, mollitia voluptate libero consectetur neque sequi quisquam tenetur fuga. Officiis neque, molestias dignissimos.</p>
+								<p class="modal-service__author">Михаил, 40 лет</p>
+								<p class="modal-service__note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
+							</div>
 						</div>
-					</div>
-					<div class="modal__service modal-service__tab">
-						<h3 class="modal__title">Обзор изменений в законодательстве</h3>
-						<img class="modal__service-img" src="img/modal-service-img6.jpg" alt="Услуга">
-						<div class="modal__service-article">
-							<p class="modal__service-text1">Как часто бывает, когда нарушается права потребителя:</p>
-							<p class="modal__service-text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem maxime quas perferendis laudantium voluptas maiores ipsam aspernatur, repudiandae nemo natus totam dicta perspiciatis accusantium doloribus reiciendis deleniti quisquam mollitia, nihil deserunt ullam accusamus! Quaerat beatae ipsum sint rerum, nemo obcaecati et commodi voluptatibus repellat expedita! Praesentium ex nam nulla.</p>
-							<p class="modal__service-author">Михаил, 40 лет</p>
-							<p class="modal__service-note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
+						<div class="modal-service__tab">
+							<h3 class="modal__title">Обзор изменений в законодательстве</h3>
+							<img class="modal-service__img" src="img/modal-service-img6.jpg" alt="Услуга">
+							<div class="modal-service__article">
+								<p class="modal-service__text1">Как часто бывает, когда нарушается права потребителя:</p>
+								<p class="modal-service__text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem maxime quas perferendis laudantium voluptas maiores ipsam aspernatur, repudiandae nemo natus totam dicta perspiciatis accusantium doloribus reiciendis deleniti quisquam mollitia, nihil deserunt ullam accusamus! Quaerat beatae ipsum sint rerum, nemo obcaecati et commodi voluptatibus repellat expedita! Praesentium ex nam nulla.</p>
+								<p class="modal-service__author">Михаил, 40 лет</p>
+								<p class="modal-service__note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
+							</div>
 						</div>
-					</div>
-					<div class="modal__service modal-service__tab">
-						<h3 class="modal__title">Письменные консультации</h3>
-						<img class="modal__service-img" src="img/modal-service-img7.jpg" alt="Услуга">
-						<div class="modal__service-article">
-							<p class="modal__service-text1">Как часто бывает, когда нарушается права потребителя:</p>
-							<p class="modal__service-text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit non est, ab beatae recusandae magnam a ipsam sed ratione voluptas voluptatibus, tenetur at nostrum laborum.</p>
-							<p class="modal__service-author">Михаил, 40 лет</p>
-							<p class="modal__service-note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
+						<div class="modal-service__tab">
+							<h3 class="modal__title">Письменные консультации</h3>
+							<img class="modal-service__img" src="img/modal-service-img7.jpg" alt="Услуга">
+							<div class="modal-service__article">
+								<p class="modal-service__text1">Как часто бывает, когда нарушается права потребителя:</p>
+								<p class="modal-service__text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit non est, ab beatae recusandae magnam a ipsam sed ratione voluptas voluptatibus, tenetur at nostrum laborum.</p>
+								<p class="modal-service__author">Михаил, 40 лет</p>
+								<p class="modal-service__note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
+							</div>
 						</div>
-					</div>
-					<div class="modal__service modal-service__tab">
-						<h3 class="modal__title">Консультации в отношении третьих лиц</h3>
-						<img class="modal__service-img" src="img/modal-service-img8.jpg" alt="Услуга">
-						<div class="modal__service-article">
-							<p class="modal__service-text1">Как часто бывает, когда нарушается права потребителя:</p>
-							<p class="modal__service-text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis repudiandae temporibus aperiam provident necessitatibus ab ipsum deserunt mollitia odio nobis dolorem soluta commodi, impedit voluptatem reprehenderit minus nihil, totam dignissimos, repellendus veniam quasi doloremque! Voluptatibus.</p>
-							<p class="modal__service-author">Михаил, 40 лет</p>
-							<p class="modal__service-note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
+						<div class="modal-service__tab">
+							<h3 class="modal__title">Консультации в отношении третьих лиц</h3>
+							<img class="modal-service__img" src="img/modal-service-img8.jpg" alt="Услуга">
+							<div class="modal-service__article">
+								<p class="modal-service__text1">Как часто бывает, когда нарушается права потребителя:</p>
+								<p class="modal-service__text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis repudiandae temporibus aperiam provident necessitatibus ab ipsum deserunt mollitia odio nobis dolorem soluta commodi, impedit voluptatem reprehenderit minus nihil, totam dignissimos, repellendus veniam quasi doloremque! Voluptatibus.</p>
+								<p class="modal-service__author">Михаил, 40 лет</p>
+								<p class="modal-service__note">Такой пример хорошо показывает, что быть юридически защищенным очень просто и выгодно.</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -188,22 +201,21 @@
 		</div>
 		<div class="modal-video modal">
 			<div class="modal__wrapper">
-				<div class="modal__content-video modal__content">
+				<div class="modal-video__content modal__content">
 					<button class="modal__close">&times;</button>
-					<div class="modal__video-container">
-						<iframe class="modal__video modal-video__tab" src="https://www.youtube.com/embed/nvkSt9jNNRE?enablejsapi=1" allowfullscreen></iframe>
-						<iframe class="modal__video modal-video__tab" src="https://www.youtube.com/embed/GEZ39uoVqTY?enablejsapi=1" allowfullscreen></iframe>
-						<iframe class="modal__video modal-video__tab" src="https://www.youtube.com/embed/RkhNiX5p72s?enablejsapi=1" allowfullscreen></iframe>
-						<iframe class="modal__video modal-video__tab" src="https://www.youtube.com/embed/sH76-rdG64o?enablejsapi=1" allowfullscreen></iframe>
-						<iframe class="modal__video modal-video__tab" src="https://www.youtube.com/embed/uDJFpmjd8QA?enablejsapi=1" allowfullscreen></iframe>
-						<iframe class="modal__video modal-video__tab" src="https://www.youtube.com/embed/tRggUdtWpiU?enablejsapi=1" allowfullscreen></iframe>
-						<iframe class="modal__video modal-video__tab" src="https://www.youtube.com/embed/ABFy-ekod4I?enablejsapi=1" allowfullscreen></iframe>
-						<iframe class="modal__video modal-video__tab" src="https://www.youtube.com/embed/7NAbkrADKxk?enablejsapi=1" allowfullscreen></iframe>
+					<div class="modal-video__tabs">
+						<div class="modal-video__iframe-container modal-video__tab lazy-animation" data-lazy-iframe="class='modal-video__iframe' title='Отзыв' src='https://www.youtube.com/embed/nvkSt9jNNRE?enablejsapi=1' allowfullscreen"></div>
+						<div class="modal-video__iframe-container modal-video__tab lazy-animation" data-lazy-iframe="class='modal-video__iframe' title='Отзыв' src='https://www.youtube.com/embed/GEZ39uoVqTY?enablejsapi=1' allowfullscreen"></div>
+						<div class="modal-video__iframe-container modal-video__tab lazy-animation" data-lazy-iframe="class='modal-video__iframe' title='Отзыв' src='https://www.youtube.com/embed/RkhNiX5p72s?enablejsapi=1' allowfullscreen"></div>
+						<div class="modal-video__iframe-container modal-video__tab lazy-animation" data-lazy-iframe="class='modal-video__iframe' title='Отзыв' src='https://www.youtube.com/embed/sH76-rdG64o?enablejsapi=1' allowfullscreen"></div>
+						<div class="modal-video__iframe-container modal-video__tab lazy-animation" data-lazy-iframe="class='modal-video__iframe' title='Отзыв' src='https://www.youtube.com/embed/uDJFpmjd8QA?enablejsapi=1' allowfullscreen"></div>
+						<div class="modal-video__iframe-container modal-video__tab lazy-animation" data-lazy-iframe="class='modal-video__iframe' title='Отзыв' src='https://www.youtube.com/embed/tRggUdtWpiU?enablejsapi=1' allowfullscreen"></div>
+						<div class="modal-video__iframe-container modal-video__tab lazy-animation" data-lazy-iframe="class='modal-video__iframe' title='Отзыв' src='https://www.youtube.com/embed/ABFy-ekod4I?enablejsapi=1' allowfullscreen"></div>
+						<div class="modal-video__iframe-container modal-video__tab lazy-animation" data-lazy-iframe="class='modal-video__iframe' title='Отзыв' src='https://www.youtube.com/embed/7NAbkrADKxk?enablejsapi=1' allowfullscreen"></div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script src="js/bundle.min.js"></script>
 </body>
 </html>
